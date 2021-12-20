@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({'roll':0})
+    return jsonify({'roll':0}) 
