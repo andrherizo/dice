@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({'roll':random.randint(1,6)}) 
+    return jsonify({'roll':random.randint(1,6), 'msg': 'Coucou'}) 
