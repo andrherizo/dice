@@ -6,7 +6,7 @@ class TestViews(TestCase):
         app.config['TESTING'] = True
         return app
 
-    def test_one_roll(self):
+    def test_one_roll(self): 
         roll = self.client.get('/').json['roll']
         self.assertIsInstance(roll, int)
         self.assertGreater(roll, 0)
